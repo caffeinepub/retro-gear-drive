@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=General+Sans:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    /* Dark arcade palette (always dark) */
+    --background: 0.26 0.025 240;
+    --foreground: 1 0 0;
+    --card: 0.29 0.025 238;
+    --card-foreground: 1 0 0;
+    --popover: 0.29 0.025 238;
+    --popover-foreground: 1 0 0;
+    --primary: 0.62 0.16 45;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.29 0.025 240;
+    --secondary-foreground: 0.85 0.015 225;
+    --muted: 0.31 0.025 240;
+    --muted-foreground: 0.65 0.015 225;
+    --accent: 0.62 0.16 45;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.58 0.22 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.4 0.025 235;
+    --input: 0.4 0.025 235;
+    --ring: 0.62 0.16 45;
+    --chart-1: 0.62 0.16 45;
+    --chart-2: 0.54 0.025 230;
+    --chart-3: 0.7 0.12 140;
+    --chart-4: 0.65 0.18 200;
+    --chart-5: 0.58 0.22 25;
+    --sidebar: 0.24 0.025 240;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.62 0.16 45;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.31 0.025 240;
+    --sidebar-accent-foreground: 0.85 0.015 225;
+    --sidebar-border: 0.4 0.025 235;
+    --sidebar-ring: 0.62 0.16 45;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "General Sans", sans-serif;
+  }
+}
